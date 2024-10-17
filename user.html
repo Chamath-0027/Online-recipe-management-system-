@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Recipe Management System</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body style="background-color:black;">
+  <div class="header">
+      <div class="logo">
+          <img src="image4.png" alt="Logo">
+      </div>
+      <div>
+          <button class="sign-button">Sign up</button>
+          <button class="login-button"> Login</button>
+      </div>
+
+  </div>
+  <div class="topnav">
+      <a class="active" href="homepage.html">Home</a>
+      <div class="dropdown">
+          <button class="dropbtn">Recipes
+            <i class="fa fa-caret-d
+            own"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="chatgpt.html">Chinese Recipe</a>
+            <a href="mexican.html">Mexican Recipe</a>
+            <a href="india.html">Indian Recipe</a>
+          </div>
+        </div> 
+ 
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#Donation">Donation</a>
+  
+      
+      <div class="search-bar">
+          <input type="text" id="search-input" placeholder="Search...">
+          <button id="search-button">Search</button>
+      </div>
+  </div>
+
+
+
+  <div class="container">
+    <form class="form" method="post" action="user.php">
+        <div class="profile">
+            <img src="user.png" alt="profile">
+            <h3 style=" margin-left:95px;">user</h3>
+            <div class="user-info">
+            <p><strong>User id:</strong> City, Country</p>
+            <p><strong>User Name:</strong> jhjsj</p>   
+            <p><strong>Email:</strong> user@example.com</p>
+            <p><strong>Date and time created:</strong> 22/3/2023</p>
+            
+        </div>
+
+        <h3>Upload a File</h3>
+    <input type="file" id="fileInput" accept=".jpg, .jpeg, .png, .pdf" style="display: none;">
+    <button onclick="selectFile()">Select File</button>
+    <p>Selected File: <span id="fileName"></span></p>
+
+    <!-- Container to display the uploaded image -->
+    <div id="imageContainer">
+        <img id="uploadedImage" style="display: none;">
+    </div>
+
+    <script>
+        function selectFile() {
+            const fileInput = document.getElementById('fileInput');
+            fileInput.click();
+
+            fileInput.addEventListener('change', function() {
+                const selectedFile = fileInput.files[0];
+                if (selectedFile) {
+                    document.getElementById('fileName').textContent = selectedFile.name;
+
+                    // Display the selected image in the container
+                    const uploadedImage = document.getElementById('uploadedImage');
+                    uploadedImage.style.display = 'block';
+
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        uploadedImage.src = e.target.result;
+                    };
+                    reader.readAsDataURL(selectedFile);
+                }
+            });
+        }
+    </script>
+
+
+
+             
+    </form>
+
+    <div class="container2">
+        <form class="form2" method="post" action="user.php">
+            </form>
+            </div>
+
+     
+                 
+
+          
+      
+    
+
+
+  <div class="footer">
+      <p>&copy; Recipe Management </p>
+      <a href="feedback.php">Feedback</a>
+      <a href="contract">Contract</a>
+      <a href="tearms">Tearms and reference </a>
+      <a href="privacy">privacy</a>
+      <a href="Faqs">FAQs</a>
+  </div>
+  </body>
+  </html>

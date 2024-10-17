@@ -1,0 +1,350 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq {
+    margin-bottom: 20px;
+    border: 1px solid #0e0d0d;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0f0f0f;
+}
+
+.answer {
+    color: #0f0f0f;
+}
+/* Styles for the search input */
+#searchInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px; /* Adjust the width as needed */
+}
+
+/* Styles for the search button */
+.searchButton {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a smooth transition on hover */
+}
+
+.searchButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+.search-bar {
+    float: right;
+    margin-top: 12px;
+  }
+  
+  /* Add a black background color to the top navigation */
+  .topnav {
+      background-color: #333;
+      overflow: hidden;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 12px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: #27c2f6;
+      color: black;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnav a.active {
+      background-color:#333;
+      color: white;
+    }
+    .topnav a.active2{
+        background-color: #373fdb;
+        color: white;
+    }
+    .topnav a.active:hover{
+        background-color: #27c2f6;
+        color: black;
+      }
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color:  #27c2f6;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropbtn:hover{
+      color:black;
+    }
+    .body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+  }
+  
+  .search-bar {
+      position:top;
+      top: 10px;
+      right: 1px;
+      margin-top:12px;
+  }
+  
+  #search-input {
+      padding: 5px;
+      font-size: 13px;
+      border: none;
+      margin-right: 10px;
+      margin-bottom:10px;
+  }
+  
+  #search-button {
+    padding: 4px 8px;
+    font-size: 15px;
+    background-color: #6366f1;
+    color: white;
+    border: 2px solid #4c46ff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+  }
+  
+  #search-button:hover {
+    background-color: #4c46ff;
+    border-color: #6366f1;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  
+  
+  .search:hover {
+      background-color: #23f0ff;
+  }
+  
+  .header {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+  }
+  
+  .logo img {
+      height: 50px;
+      width:50px;
+      border-radius: 75%;
+      border: 2px solid rgb(255, 255, 255);
+      box-shadow: 0 0 50px 0 rgb(187, 200, 188);
+       /* Adjust the height as needed */
+  }
+  
+  .login-button {
+    --green: #ffffff;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgb(255, 255, 255), 0 0 9px 3px rgb(255, 255, 255);
+  }
+  
+  .login-button:hover {
+    color: #ffffff;
+    box-shadow: inset 0 0 10px rgb(255, 255, 255), 0 0 9px 3px rgb(255, 255, 255);
+  }
+  
+  .login-button:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgb(239, 255, 248) 40%,rgba(0, 0, 0, 0.1) 60% , transparent 100%);
+  }
+  
+  .login-button:hover:before {
+    transform: translateX(15em);
+  }
+  
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+    
+.sign-button {
+    --green: #ffffff;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgb(255, 255, 255), 0 0 9px 3px rgb(255, 255, 255);
+  }
+  
+  .sign-button:hover {
+    color: #ffffff;
+    box-shadow: inset 0 0 10px rgb(255, 255, 255), 0 0 9px 3px rgb(255, 255, 255);
+  }
+  
+  
+  .sign-button:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgb(255, 255, 255) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+  }
+  
+  .sign-button:hover:before {
+    transform: translateX(15em);
+  }
+
+  .form {
+    position:absolute;
+    top:180px;
+    left:270px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 900px;
+    height:800px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+    background: linear-gradient(45deg,rgba(170, 170, 170, 0.775), rgb(0, 0, 0));
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0 0 50px 0 rgb(187, 200, 188);
+    
+  }
+  
+  .form h1 {
+    color: rgb(3, 3, 3);
+    margin-left: 350px;
+    font-size:50px;
+    position: absolute;
+  }
+
+  .form p{
+    color:rgb(12, 12, 12);
+    font-size: 30px;
+    margin-left: 200px;
+    position: absolute;
+    top:100px;
+    
+  }
+
+  .form img{
+    opacity:0.6;
+    margin-left:45px;
+    position: absolute;
+    top:30px;
+    background-size:100% 100%;
+  }
+  .container{
+
+color: #0e0d0d;
+
+  }
